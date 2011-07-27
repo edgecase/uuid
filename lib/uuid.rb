@@ -68,7 +68,7 @@ class UUID
     STRING = "#{MAJOR}.#{MINOR}.#{PATCH}"
   end
 
-  VERSION = Version::STRING
+  VERSION ||= Version::STRING
 
   ##
   # Clock multiplier. Converts Time (resolution: seconds) to UUID clock
